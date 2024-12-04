@@ -6,6 +6,7 @@ module.exports = {
     "./page/*.{js,jsx,ts,tsx,html,php}",
     "./style/*.{js,jsx,ts,tsx,html,php}",
     "./index.php",
+    "./page/home.php",
   ],
   theme: {
     extend: {},
