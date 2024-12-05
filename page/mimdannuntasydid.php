@@ -7,10 +7,10 @@
     ?>
 </head>
 
-<body>
-<?php NavBar(); ?>
+<body class="font-sans dark">
+<?php NavBar(4); ?>
 </body>
 
-<?php Scripts(); ?>
+<?php Scripts();Footer(false); ?>
 
 </html>

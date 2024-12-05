@@ -9,7 +9,7 @@ include_once "./superpage.php";
     <title>Loading</title>
     <meta http-equiv="refresh" content="1; url=<?=$HOSTURL?>page/home.php">
 </head>
-<body>
+<body class="font-sans dark">
     
 </body>
 </html>
