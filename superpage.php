@@ -18,8 +18,16 @@ function pindahHalamanKe($url)
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+        <script src="https://cdn.tailwindcss.com"></script>
         <title>TIK Tajwid - Kumpulan Tajwid Al-Quran</title>
     </head>
+
+    <style>
+        html {
+            background-color: #0c142d !important;
+        }
+    </style>
+    
 <?php } ?>
 
 <?php function NavBar(int $pageNumber)
@@ -29,7 +37,7 @@ function pindahHalamanKe($url)
     $nonactive = 'class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"';
 ?>
     <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
-        <div class="max-w-screen-xxl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div class="max-w-screen-xxl flex flex-wrap items-center justify-between mx-auto p-3">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="<?= $HOSTURL; ?>img/logo.jpeg" style="width: 7vh; height: 7vh; border-radius: 100vh;" alt="Logonya" />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Tikjwid</span>
