@@ -6,7 +6,7 @@ include './../superpage.php';
 Head();
 ?>
 
-<body class="font-sans dark">
+<body class="font-sans  <?=  $WEBMODE ?>">
     <?php NavBar(1); ?>
 
     <main class="bg-white dark:bg-gray my-3 flex items-center min-h-screen rounded-lg max-w-screen m-10">

@@ -3,6 +3,7 @@
 
 <?php
 $HOSTURL = "http://127.0.0.1/tikjwid/";
+$WEBMODE = "";
 
 function pindahHalamanKe($url)
 {
@@ -12,7 +13,9 @@ function pindahHalamanKe($url)
 ?>
 
 <?php function Head()
-{ ?>
+{
+    global $HOSTURL, $WEBMODE;
+?>
 
     <head>
         <meta charset="UTF-8">
@@ -23,11 +26,13 @@ function pindahHalamanKe($url)
     </head>
 
     <style>
-        html {
-            background-color: #0c142d !important;
+        <?php
+        if ($WEBMODE == "dark") {
+            echo "html { background-color: #0c142d !important; }";
         }
+        ?>
     </style>
-    
+
 <?php } ?>
 
 <?php function NavBar(int $pageNumber)
@@ -40,7 +45,7 @@ function pindahHalamanKe($url)
         <div class="max-w-screen-xxl flex flex-wrap items-center justify-between mx-auto p-3">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="<?= $HOSTURL; ?>img/logo.jpeg" style="width: 7vh; height: 7vh; border-radius: 100vh;" alt="Logonya" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Tikjwid</span>
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-gray-900 dark:text-white">TIK Tajwid</span>
             </a>
             <button data-collapse-toggle="navbar-multi-level" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-multi-level" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
@@ -111,7 +116,7 @@ function pindahHalamanKe($url)
 <?php
 function Footer(bool $isFixed)
 { ?>
-    <footer class="<?= ($isFixed == true ) ? "fixed bottom-0" : "" ?> left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
+    <footer class="<?= ($isFixed == true) ? "fixed bottom-0" : "" ?> left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
         <div class="w-full mx-auto p-4 md:flex md:items-center md:justify-between">
             <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">&copy; 2024 <a href="" target="_blank" rel="noopener noreferrer" class="hover:underline">Tikjwid™</a>. All Rights Reserved.
             </span>

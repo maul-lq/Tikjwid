@@ -7,7 +7,7 @@
     ?>
 </head>
 
-<body class="font-sans dark">
+<body class="font-sans  <?=  $WEBMODE ?>">
     <?php NavBar(3); ?>
 
     <main class="bg-white dark:bg-gray my-3 flex items-center min-h-screen max-w-screen m-10">
