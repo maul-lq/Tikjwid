@@ -11,7 +11,7 @@
 <?php NavBar(9); ?>
 <main class="min-h-screen flex">
         <!-- Side Menu (Fixed) -->
-        <div class="w-64 bg-gray-800 text-white p-4 fixed top-16 left-0 h-screen overflow-y-auto">
+        <div class="w-64 dark:bg-gray-800 dark:text-white text-gray-900 bg-gray-200 p-4 mt-0 fixed left-0 h-screen overflow-y-auto">
             <h2 class="text-xl font-bold mb-6">Tajwid</h2>
             <ul class="space-y-4">
                 <li><a href="#izhar" class="hover:text-yellow-400">Izhar</a></li>
@@ -22,7 +22,7 @@
         </div>
 
         <!-- Content -->
-        <div class="ml-64 p-6 bg-gray-100 w-full mt-16">
+        <div class="ml-64 p-6 bg-gray-100 text-gray-700 dark:text-white dark:bg-gray-800 w-full mt-16">
             <section id="izhar" class="mb-16">
                 <h2 class="text-2xl font-bold mb-4">Izhar</h2>
                 <p>Izhar adalah pelafalan huruf-huruf hijaiyah yang jelas dan tidak disamarkan dalam bacaannya. Contoh huruf Izhar adalah ...</p>

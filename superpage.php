@@ -3,7 +3,10 @@
 
 <?php
 $HOSTURL = "http://127.0.0.1/tikjwid/";
-$WEBMODE = "";
+
+if (isset($_GET['theme'])) {
+    $WEBMODE = ($_GET['theme']=='dark') ? "dark":"";
+}
 
 function pindahHalamanKe($url)
 {
@@ -41,7 +44,7 @@ function pindahHalamanKe($url)
     $active = 'class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page"';
     $nonactive = 'class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"';
 ?>
-<nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 fixed top-0 left-0 w-full z-10">
+<nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 top-0 left-0 w-full z-10">
     <div class="max-w-screen-xxl flex flex-wrap items-center justify-between mx-auto p-3">
         
         <!-- Logo dan Item Pertama -->
@@ -71,6 +74,12 @@ function pindahHalamanKe($url)
                 </li>
                 <li class="ml-auto">
                     <a href="<?= $HOSTURL; ?>page/qalqalah.php" <?= ($pageNumber == 6) ? $active : $nonactive; ?>>Qalqalah</a>
+                </li>
+                <hr>
+                <li class="ml-auto dark:text-white text-gray-600">
+                    <a href="?theme=dark">Dark Theme</a>
+                    /
+                    <a href="?theme=default">Default theme</a>
                 </li>
             </ul>
         </div>

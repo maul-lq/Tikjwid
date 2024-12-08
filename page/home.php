@@ -30,6 +30,6 @@ Head();
 
 
 <?php Scripts();
-Footer(false); ?>
+Footer(true); ?>
 
 </html>
