@@ -6,21 +6,30 @@ include './../superpage.php';
 Head();
 ?>
 
-<body class="font-sans  <?=  $WEBMODE ?>">
+<body class="font-sans <?=  $WEBMODE ?>">
     <?php NavBar(1); ?>
 
-    <main class="bg-white dark:bg-gray my-3 flex items-center min-h-screen rounded-lg max-w-screen m-10">
-        <div class="bg-white dark:bg-gray-900 dark:text-white min-h-screen p-6  rounded-lg shadow-lg ">
-            <h1 class="text-xl text-gray-600 dark:text-white font-bold mb-4">Tikjwid</h1>
-            <p class="text-gray-600 dark:text-white text-justify">
-                Tikjwid adalah sebuah website yang membantu membaca Al-Qur'an secara online, terutama bagi orang-orang yang ingin belajar dan mencintai Al-Qur'an. Website ini memberikan contoh-contoh pernyataan, ayat-ayat, dan tafsir yang dapat membantu mereka memahami Al-Qur'an.
-            </p>
+    <main class="bg-white dark:bg-gray-800 my-3 flex items-center justify-center">
+        <div class="mt-40 px-6 sm:px-16 max-w-screen-xl flex justify-between items-center w-full">
+            <!-- Text Section -->
+            <div class="w-full sm:w-1/2">
+                <div class="text-4xl font-extrabold text-gray-900 dark:text-white">TIKJWID</div>
+                <div class="w-full text-justify mt-6 text-gray-700 dark:text-gray-300">
+                    Temukan penjelasan lengkap tentang tajwid beserta contoh-contohnya di sini. Tikjwid hadir untuk memudahkan Anda memahami kaidah membaca Al-Qur'an dengan benar dan jelas. Jelajahi materi tajwid secara praktis dan terstruktur. Mari bersama belajar membaca Al-Qur'an dengan benar!
+                </div>
+            </div>
+
+            <!-- Image Section -->
+            <div class="w-full sm:w-1/2 mt-6 sm:mt-0 ml-auto flex justify-center">
+                <img src="../img/logo_png.png" alt="Logo" class="w-80 h-auto object-contain">
+            </div>
         </div>
     </main>
 
 </body>
 
+
 <?php Scripts();
-Footer(false); ?>
+Footer(true); ?>
 
 </html>
